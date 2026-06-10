@@ -26,7 +26,7 @@ Copyright 2024, ZipCodeWilmington
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>21</maven.compiler.release>
-        <main.class>rocks.zipcode.everest.Main</main.class>
+        <main.class>rocks.zipcode.everest.Launcher</main.class>
     </properties>
     <build>
         <plugins>
@@ -94,6 +94,11 @@ Copyright 2024, ZipCodeWilmington
                                         <mkdir dir="${project.build.directory}/Everest.app/Contents/MacOS"/>
                                         <mkdir dir="${project.build.directory}/Everest.app/Contents/Java"/>
                                         <mkdir dir="${project.build.directory}/Everest.app/Contents/Resources"/>
+
+                                        <!-- Copy app icon -->
+                                        <copy todir="${project.build.directory}/Everest.app/Contents/Resources">
+                                            <fileset dir="${project.basedir}/packaging/macos" includes="everest.icns"/>
+                                        </copy>
 
                                         <!-- Copy and filter Info.plist (substitutes ${project.version}) -->
                                         <copy todir="${project.build.directory}/Everest.app/Contents"

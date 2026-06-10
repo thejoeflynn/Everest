@@ -38,4 +38,10 @@ fi
 exec java \
     --module-path "$JAVAFX_LIB" \
     --add-modules javafx.controls,javafx.fxml \
+    --add-opens javafx.graphics/com.sun.javafx.css=ALL-UNNAMED \
+    --add-opens javafx.controls/com.sun.javafx.scene.control.behavior=ALL-UNNAMED \
+    --add-opens javafx.controls/com.sun.javafx.scene.control=ALL-UNNAMED \
+    --add-opens javafx.base/com.sun.javafx.binding=ALL-UNNAMED \
+    --add-opens javafx.graphics/com.sun.javafx.scene=ALL-UNNAMED \
+    --add-opens javafx.graphics/com.sun.javafx.scene.traversal=ALL-UNNAMED \
     -jar "$JAR"

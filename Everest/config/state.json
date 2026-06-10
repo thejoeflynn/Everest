@@ -36,23 +36,4 @@
   "formStringTuples" : null,
   "formFileTuples" : null,
   "binaryFilePath" : null
-}, {
-  "target" : "http://localhost:8080/api/piros/",
-  "httpMethod" : "GET",
-  "authMethod" : "Basic",
-  "params" : [ ],
-  "headers" : [ ],
-  "contentType" : null,
-  "rawBody" : null,
-  "rawBodyBoxValue" : null,
-  "basicUsername" : "",
-  "basicPassword" : "",
-  "basicEnabled" : false,
-  "digestUsername" : "",
-  "digestPassword" : "",
-  "digestEnabled" : false,
-  "urlStringTuples" : null,
-  "formStringTuples" : null,
-  "formFileTuples" : null,
-  "binaryFilePath" : null
 } ]
